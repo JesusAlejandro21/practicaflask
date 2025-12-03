@@ -6,6 +6,10 @@ app = Flask(__name__)
 def home():
     return "¡Hola desde Flask desplegado en Render!"
 
+@app.route("/prueba")
+def datos():
+    return "los datos son: jesus"
+
 if __name__ == "__main__":
     # Render usa el puerto que define en la variable PORT
     import os
