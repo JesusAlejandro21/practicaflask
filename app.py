@@ -10,6 +10,10 @@ def home():
 def datos():
     return "los datos son: jesus"
 
+@app.route("/endpoint")
+def datos():
+    return "los datos son: reyna"
+
 if __name__ == "__main__":
     # Render usa el puerto que define en la variable PORT
     import os
